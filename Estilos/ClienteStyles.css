@@ -1,0 +1,97 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /*Color de fondo*/
+    margin: 0;
+    padding: 0;
+    height: 100vh; /*Asegura que el body ocupe toda la altura de la ventana*/
+}
+
+.container {
+    width: 100%; /*Ancho completo del contenedor*/
+    max-width: 1020px; /*Ancho máximo del contenedor*/
+    margin: 0 auto; /*Centrar horizontalmente*/
+    padding: 10px;
+    background-color: #fff; /*Fondo blanco para el formulario */
+    border-radius: 5px; /*Bordes redondeados*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Sombra suave*/
+}
+
+h2 {
+    text-align: center; /* Centrar el título */
+}
+
+.texto-error {
+    color: red; /* Color para el mensaje de error */
+}
+
+.texto-exito {
+    color: green; /* Color para el mensaje de exito */
+}
+
+
+.gridview-cliente {
+    width: 100%; /* Tomar todo el ancho del contenedor */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio arriba del GridView */
+    font-size: 12px; /* Tamaño de letra más pequeño */
+}
+
+    .gridview-cliente th, .gridview-cliente td {
+        border: 1px solid #ddd; /* Bordes de las celdas */
+        padding: 8px; /* Relleno de las celdas */
+    }
+
+    .gridview-cliente th {
+        background-color: #f2f2f2; /* Color de fondo del encabezado */
+    }
+
+    .gridview-cliente tr:nth-child(even) {
+        background-color: #f9f9f9; /* Color de filas pares */
+    }
+
+    .gridview-cliente tr:hover {
+        background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+    }
+
+.selected-row {
+    background-color: #d3d3d3; /* Color gris para la fila seleccionada */
+}
+
+.input-field {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    padding: 10px; /* Relleno */
+    border: 1px solid #ccc; /* Borde de los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    margin-bottom: 10px; /* Espacio inferior entre campos */
+}
+
+.btn-agregar, .btn-editar, .btn-eliminar, .btn-limpiar {
+    width: 100%; /* Ancho completo para todos los botones */
+    padding: 10px 15px; /* Relleno */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    margin-bottom: 10px; /* Espacio entre botones */
+}
+
+.btn-agregar {
+    background-color: green; /* Color verde para el botón Agregar */
+}
+
+.btn-editar {
+    background-color: yellow; /* Color amarillo para el botón Editar */
+    color: black; /* Color del texto */
+}
+
+.btn-eliminar {
+    background-color: red; /* Color rojo para el botón Eliminar */
+}
+
+.btn-limpiar {
+    background-color: gray; /* Color gris para el botón Limpiar */
+}
+
+    .btn-agregar:hover, .btn-editar:hover, .btn-eliminar:hover, .btn-limpiar:hover {
+        opacity: 0.8; /* Efecto de opacidad al pasar el mouse */
+    }
